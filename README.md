@@ -3,8 +3,11 @@
 A collections of utility scripts or commands I write and gather to enhance macos experience
 
 1. Adjust MacOS menubar padding 
-   `defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 8`
-
+   ```
+    defaults -currentHost write -globalDomain NSStatusItemSpacing -int 6
+    defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 6
+   ```
+   
 2. Time Machine Speed Up
    `sudo sysctl debug.lowpri_throttle_enabled=0`
 
@@ -32,27 +35,24 @@ A collections of utility scripts or commands I write and gather to enhance macos
 10. Calc MD5
     `md5 xxxxx.xxx`
 
-11. Encrypted Zip
-    `zip -er output.zip filesource`
+11. SHASUM 
+   `shasum -a 256`
 
-12. Build Folder File Tree
-    
-    ```
-    brew install tree
-    tree xxxxx
-    ```
+12. Encrypted Zip
+   `zip -er output.zip filesource`
 
-13. Customize Finder Window Size
-    
-    ```
-    1. Open a new Finder window, do not navigate to any folders yet;
-    2. Resize the window to the size you want *(however don't move the window to your desired location yet)*;
-    3. start by pressing the Command ⌘ **and** Alt / Option keys together **and** drag the window to your desired location;
-    4. release your mouse button first then release the Command ⌘ AND Alt / Option keys second;
-    5. Close resized window;
-    
-    ```
+13. Build Folder File Tree    
+   ```
+   brew install tree
+   tree xxxxx
+   ```
 
+14. Customize Finder Window Size
+   ```
+   1. Open a new Finder window, do not navigate to any folders yet;
+   2. Resize the window to the size you want *(however don't move the window to your desired location yet)*;
+   3. start by pressing the Command ⌘ **and** Alt / Option keys together **and** drag the window to your desired location;
+   4. release your mouse button first then release the Command ⌘ AND Alt / Option keys second;
+   5. Close resized window;
+   ```
 
-
-14. 
